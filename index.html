@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440, initial-scale=1.0">
+  <title>Muchammad Zubair Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</body>
+</html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="#certificate">CERTIFICATE</a></li>
+      <li><a href="#pengalaman">PENGALAMAN</a></li>
+      <li><a href="#about">ABOUT ME</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <div>
+        <h2>Hello,</h2>
+        <h1>I Am <span class="highlight">Muchammad Zubair</span></h1>
+        <p>
+          I am a student at <b>SMA/SMK</b> majoring in computer engineering and network, highly passionate in editing and several PC software, and have <a href="#skill" class="skill-link">lots of UI/UX skills</a>.
+        </p>
+        <a href="#about" class="btn-animated">Let's Go →</a>
+        <div class="social-links">
+          <a href="#"><img src="img/github.png" alt="GitHub" /></a>
+          <a href="#"><img src="img/gmaiil.png" alt="Google" /></a>
+          <a href="#"><img src="img/linkidn.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+      <div class="profile-img">
+        <img src="img/foto uky.png" alt="Profile" />
+      </div> 
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section about-section">
+    <div class="about-card">
+      <h2>ABOUT ME</h2>
+      <p>
+        My name is <b>Muchammad Zubair Marzuqin</b>, and I'm a high school student. I'm passionate about <b>editing and design</b>. My experience is purely self-taught, learned from various social media platforms. I've also mastered <b>UI/UX, Alight Motion, Canva, Figma, Adobe Premiere, HTML, CSS, JavaScript, and Visual Code</b>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pengalaman Section -->
+  <section id="pengalaman" class="section pengalaman-section">
+    <h2>Pengalaman</h2>
+    <div class="pengalaman-cards">
+      <div class="pengalaman-card">
+        <div class="icon"><img src="img/kehidupan.png" alt="Code" /></div>
+        <p>
+          I participated in <b>Pencak Silat</b> from elementary school until I graduated from junior high school, winning <b>several medals in competitions</b>. I've been passionate about <b>design since elementary school</b>, and now, in 2025, I've taught myself and tried new things, eventually mastering several editing applications.
+        </p>
+      </div>
+      <div class="pengalaman-card">
+        <div class="icon"><img src="img/icon vektor kerja.png" alt="Code" /></div>
+        <p>
+           Jaringan Komputer (Networking), Perakitan dan Pemeliharaan Komputer, Administrasi ,Keamanan Jaringan (Network Security)Server,Pemrograman Dasar,Virtualisasi dan Cloud Computing (opsional tergantung kurikulum), Penggunaan Software Tools TKJ,Teknologi Wireless dan IoT (opsional),Troubleshooting
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <section id="skill" class="section skill-section">
+    <h2>SKILL</h2>
+    <div class="skill-icons">
+      <img src="img/figma.png" alt="Figma" />
+      <img src="img/canva.png" alt="Canva" />
+      <img src="img/css.png" alt="CSS" />
+      <img src="img/html2.png" alt="HTML" />
+      <img src="img/js.png" alt="JavaScript" />
+      <img src="img/premire pro.png" alt="Premiere" />
+      <img src="img/vscode.png" alt="VS Code" />
+    </div>
+  </section>
+
+  <!-- Certificate Section -->
+  <section id="certificate" class="section certificate-section">
+    <h2>CERTIFICATE</h2>
+    <div class="certificate-gallery">
+      <div class="certificate-item">
+        <img src="certifikat cisco.jpg" alt="Certificate 1" />
+      </div>
+      <div class="certificate-item">
+        <img src="certifikat fortinet.jpg" alt="Certificate 2" />
+      </div>
+      <div class="certificate-item">
+        <img src="certificate3.jpg" alt="Certificate 3" />
+      </div>
+      <div class="certificate-item">
+        <img src="certificate4.jpg" alt="Certificate 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<!-- ...existing code... -->
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xyznkjzg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-animated">Send</button>
+    </form>
+  </section>
+<!-- ...existing code... -->
+  <script>
+    // Navbar active state
+    const navLinks = document.querySelectorAll('.navbar a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Button click animation
+    document.querySelectorAll('.btn-animated').forEach(btn => {
+      btn.addEventListener('mousedown', () => btn.classList.add('pressed'));
+      btn.addEventListener('mouseup', () => btn.classList.remove('pressed'));
+      btn.addEventListener('mouseleave', () => btn.classList.remove('pressed'));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #23232b;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+a {
+  transition: color 0.2s;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.fade-init {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23232b;
+}
+::-webkit-scrollbar-thumb {
+  background: #35353f;
+  border-radius: 8px;
+}
